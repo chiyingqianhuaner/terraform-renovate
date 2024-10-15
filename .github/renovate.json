@@ -10,5 +10,16 @@
       "separateMultipleMajor": true,
       "groupName": "terraform-major-and-minor"
     }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^atlantis\\.yaml$"],
+      "matchStrings": [
+        "terraform_version:\\s*\"(?<currentValue>[^\"]+)\""
+      ],
+      "datasourceTemplate": "terraform",
+      "depNameTemplate": "hashicorp/terraform",
+      "versioningTemplate": "hashicorp"
+    }
   ]
 }
