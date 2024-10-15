@@ -19,7 +19,7 @@
       ],
       "datasourceTemplate": "terraform",
       "depNameTemplate": "hashicorp/terraform",
-      "versioningTemplate": "hashicorp"
+      "versioningTemplate": "semver"
     }
   ]
 }
