@@ -7,5 +7,17 @@
       "groupName": "all dependencies",
       "automerge": true
     }
+  ],
+  "regexManagers": [
+    {
+      "fileMatch": ["^versions\\.tf$"],
+      "matchStrings": [
+        "required_version\\s+=\\s+\"(?<currentValue>[^\"]+)\""
+      ],
+      "datasourceTemplate": "terraform",
+      "depNameTemplate": "hashicorp/terraform",
+      "versioningTemplate": "hashicorp"
+    }
   ]
+
 }
