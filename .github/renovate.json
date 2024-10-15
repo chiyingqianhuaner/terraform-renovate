@@ -19,7 +19,7 @@
       ],
       "extractVersionTemplate": "v(?<version>.*)$",
       "depNameTemplate": "hashicorp/terraform",
-      "datasourceTemplate": "terraform",
+      "datasourceTemplate": "github-releases",
       "versioningTemplate": "semver"
     }
   ]
