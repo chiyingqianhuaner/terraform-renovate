@@ -15,7 +15,7 @@
     {
       "fileMatch": ["^atlantis\\.yaml$"],
       "matchStrings": [
-        "terraform_version:\\s*\"(?<currentValue>[^\"]+)\""
+        "terraform_version:(?<currentValue>.*)"
       ],
       "datasourceTemplate": "terraform",
       "depNameTemplate": "hashicorp/terraform",
