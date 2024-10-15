@@ -15,11 +15,12 @@
     {
       "fileMatch": ["^atlantis\\.yaml$"],
       "matchStrings": [
-        "terraform_version:(?<currentValue>.*)"
+        "terraform_version:\\s*v?(?<currentValue>[\\d\\.]+)"
       ],
       "extractVersionTemplate": "v(?<version>.*)$",
       "depNameTemplate": "hashicorp/terraform",
-      "datasourceTemplate": "github-releases"
+      "datasourceTemplate": "terraform",
+      "versioningTemplate": "semver"
     }
   ]
 }
