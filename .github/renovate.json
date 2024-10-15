@@ -7,6 +7,13 @@
       "groupName": "all dependencies",
       "automerge": true
     }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["hashicorp/terraform"],
+      "separateMajorMinor": true,
+      "separateMultipleMajor": true,
+      "groupName": "terraform-major-and-minor"
+    }
   ]
-
 }
