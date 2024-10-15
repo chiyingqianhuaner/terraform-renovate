@@ -4,12 +4,7 @@
   "packageRules": [
     {
       "packagePatterns": ["*"],
-      "groupName": "all dependencies",
-      "automerge": true
-    }
-  ],
-  "packageRules": [
-    {
+      "automerge": true,
       "matchPackageNames": ["hashicorp/terraform"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
