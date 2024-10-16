@@ -16,17 +16,5 @@
       "separateMultipleMajor": true,
       "groupName": "terraform-major-and-minor-ds-boston-prod"
     }
-  ],
-  "regexManagers": [
-    {
-      "fileMatch": ["^atlantis\\.yaml$"],
-      "matchStrings": [
-        "terraform_version:\\s*v?(?<currentValue>[\\d\\.]+)"
-      ],
-      "extractVersionTemplate": "v(?<version>.*)$",
-      "depNameTemplate": "hashicorp/terraform",
-      "datasourceTemplate": "github-releases",
-      "versioningTemplate": "semver"
-    }
   ]
 }
