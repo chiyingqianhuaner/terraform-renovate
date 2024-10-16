@@ -3,7 +3,8 @@
   "schedule": ["before 4am on monday"],
   "includePaths": [
     "helm/gke/ds-boston-dev/**",
-    "helm/gke/ds-boston-prod/**"
+    "helm/gke/ds-boston-prod/**",
+    "atlantis.yaml"
   ],
   "packageRules": [
     {
