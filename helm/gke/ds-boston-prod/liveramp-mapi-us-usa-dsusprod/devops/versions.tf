@@ -7,9 +7,7 @@ terraform {
     vault       = "~> 2.0"
     helm        = "~> 2.0"
     kubernetes  = "~> 2.0"
-    grafana = {
-      source  = "grafana/grafana"
-      version = "~> 1.3"
-    }
+    grafana     = "~> 1.3"
+
   }
 }
