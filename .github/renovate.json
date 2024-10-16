@@ -12,7 +12,7 @@
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "Update {{{depName}}} from {{{oldVersion}}} to {{{newVersion}}} in ds-boston-dev",
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in ds-boston-dev",
       "groupName": "terraform-major-and-minor-ds-boston-dev"
     },
     {
