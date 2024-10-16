@@ -5,11 +5,11 @@ terraform {
     google      = "~> 4.0"
     google-beta = "~> 2.0"
     vault       = "~> 2.0"
-    helm        = "~> 1.0"
-    kubernetes  = "~> 1.0"
+    helm        = "~> 2.0"
+    kubernetes  = "~> 2.0"
     grafana = {
       source  = "grafana/grafana"
-      version = "~> 1.3"
+      version = "~> 2.3"
     }
   }
 }
