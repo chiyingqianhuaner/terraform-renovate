@@ -9,14 +9,14 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/ds-boston-dev/**"],
-      "matchPackageNames": ["hashicorp/terraform","hashicorp/terraform-provider-grafana"],
+      "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "prTitle": "Update version in ds-boston-dev",
       "groupName": "terraform-major-and-minor-ds-boston-dev"
     },
     {
       "matchPaths": ["helm/gke/ds-boston-prod/**"],
-      "matchPackageNames": ["hashicorp/terraform","hashicorp/terraform-provider-grafana"],
+      "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "prTitle": "Update version in ds-boston-dev",
       "groupName": "terraform-major-and-minor-ds-boston-prod"
