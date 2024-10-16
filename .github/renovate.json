@@ -12,7 +12,6 @@
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "prTitle": "Update version in ds-boston-dev",
-      "labels": ["Update version in ds-boston-dev"],
       "groupName": "terraform-major-and-minor-ds-boston-dev"
     },
     {
@@ -20,7 +19,6 @@
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "prTitle": "Update version in ds-boston-prod",
-      "labels": ["Update version in ds-boston-prod"],
       "groupName": "terraform-major-and-minor-ds-boston-prod"
     }
   ],
