@@ -16,7 +16,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
-      "matchPackageNames": ["hashicorp/*"],
+      "matchPackageNames": ["hashicorp/*","grafana/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod",
