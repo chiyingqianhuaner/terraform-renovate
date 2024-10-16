@@ -9,7 +9,7 @@ terraform {
     kubernetes  = "~> 2.0"
     grafana = {
       source  = "grafana/grafana"
-      version = "~> 2.3"
+      version = "~> 1.3"
     }
   }
 }
