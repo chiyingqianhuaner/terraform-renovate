@@ -12,16 +12,16 @@
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in ds-boston-dev",
-      "groupName": "terraform-major-and-minor-ds-boston-dev"
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in my-dev",
+      "groupName": "terraform-major-and-minor-my-dev"
     },
     {
       "matchPaths": ["helm/gke/my-prod/**"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in ds-boston-prod",
-      "groupName": "terraform-major-and-minor-ds-boston-prod"
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in my-prod",
+      "groupName": "terraform-major-and-minor-my-prod"
     }
   ],
   "regexManagers": [
