@@ -8,7 +8,7 @@
   ],
   "packageRules": [
     {
-      "matchPaths": ["helm/gke/my-dev/**"],
+      "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
@@ -16,7 +16,7 @@
       "groupName": "terraform-major-and-minor-business-dev"
     },
     {
-      "matchPaths": ["helm/gke/my-prod/**"],
+      "matchPaths": ["helm/gke/business-prod/**"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
