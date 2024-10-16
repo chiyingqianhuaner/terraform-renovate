@@ -2,8 +2,8 @@
   "extends": ["config:recommended", ":dependencyDashboard"],
   "schedule": ["before 0am on weekdays"],
   "includePaths": [
-    "helm/gke/ds-boston-dev/**",
-    "helm/gke/ds-boston-prod/**",
+    "helm/gke/my-dev/**",
+    "helm/gke/my-prod/**",
     "atlantis.yaml"
   ],
   "packageRules": [
