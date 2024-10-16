@@ -1,21 +1,16 @@
 {
   "extends": ["config:recommended", ":dependencyDashboard"],
   "schedule": ["before 4am on monday"],
-  "ignorePaths": [
-    "**",
-    "!/helm/gke/ds-boston-dev/**",
-    "!/helm/gke/ds-boston-prod/**"
-  ],
   "packageRules": [
     {
-      "matchPaths": ["/helm/gke/ds-boston-dev/**"],
+      "matchPaths": ["helm/gke/ds-boston-dev/**"],
       "matchPackageNames": ["hashicorp/terraform"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "groupName": "terraform-major-and-minor-ds-boston-dev"
     },
     {
-      "matchPaths": ["/helm/gke/ds-boston-prod/**"],
+      "matchPaths": ["helm/gke/ds-boston-prod/**"],
       "matchPackageNames": ["hashicorp/terraform"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
