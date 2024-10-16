@@ -1,6 +1,6 @@
 {
   "extends": ["config:recommended", ":dependencyDashboard"],
-  "schedule": ["before 24pm on weekdays"],
+  "schedule": ["before 0am on weekdays"],
   "includePaths": [
     "helm/gke/ds-boston-dev/**",
     "helm/gke/ds-boston-prod/**",
