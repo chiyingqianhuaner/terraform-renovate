@@ -3,7 +3,7 @@
   "schedule": ["before 4am on monday"],
   "packageRules": [
     {
-      "matchPaths": ["/helm/gke/ds-boston-dev/**"],
+      "matchPaths": ["/helm/gke/ds-boston-dev/liveramp-mapi-us-usa-dsusdev/**"],
       "matchPackageNames": ["hashicorp/terraform"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
