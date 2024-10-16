@@ -11,6 +11,7 @@
       "matchPaths": ["helm/gke/ds-boston-dev/**"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
+      "separateMultipleMajor": true,
       "prTitle": "Update version in ds-boston-dev",
       "groupName": "terraform-major-and-minor-ds-boston-dev"
     },
@@ -18,6 +19,7 @@
       "matchPaths": ["helm/gke/ds-boston-prod/**"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
+      "separateMultipleMajor": true,
       "prTitle": "Update version in ds-boston-prod",
       "groupName": "terraform-major-and-minor-ds-boston-prod"
     }
