@@ -3,18 +3,11 @@
   "schedule": ["before 4am on monday"],
   "packageRules": [
     {
-      "matchPaths": ["/helm/gke/ds-boston-dev/*"],
+      "matchPaths": ["/sss/*"],
       "matchPackageNames": ["hashicorp/terraform"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "groupName": "terraform-major-and-minor-ds-boston-dev"
-    },
-    {
-      "matchPaths": ["/helm/gke/ds-boston-prod/*"],
-      "matchPackageNames": ["hashicorp/terraform"],
-      "separateMajorMinor": true,
-      "separateMultipleMajor": true,
-      "groupName": "terraform-major-and-minor-ds-boston-prod"
     }
   ]
 }
