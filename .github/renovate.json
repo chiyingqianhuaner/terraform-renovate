@@ -16,7 +16,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
-      "matchPackageNames": ["hashicorp/*","grafana/*"],
+      "matchPackageNames": ["hashicorp/*","grafana/*","terraform-google-modules/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod",
