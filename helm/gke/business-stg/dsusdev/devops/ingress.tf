@@ -8,11 +8,6 @@ module "emissary_svc" {
     chart      = "emissary-ingress"
     version    = "8.7.0"
   }
-  opts = module.helm_init.opts
-
-  values = [
-    templatefile("${local.env.yaml_d}/emissary-svc.yaml.tmpl", local.emissary_svc_map)
-  ]
 
 }
 
