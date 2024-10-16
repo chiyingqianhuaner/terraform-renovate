@@ -16,9 +16,17 @@
       "groupName": "terraform-major-and-minor-business-dev"
     },
     {
+      "matchPaths": ["helm/gke/business-dev/**"],
+      "matchPackageNames": ["hashicorp/*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "separateMultipleMajor": true,
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev",
+      "groupName": "terraform-major-and-minor-business-dev"
+    },
+    {
       "matchPaths": ["helm/gke/business-prod/**"],
       "matchPackageNames": ["hashicorp/*"],
-      "matchUpdateTypes": ["major","minor"],
+      "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod",
       "groupName": "terraform-major-and-minor-business-prod"
