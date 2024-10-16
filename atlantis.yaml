@@ -19,7 +19,7 @@ projects:
     dir: helm/gke/business-prod
     workspace: default
     workflow: ops_mttn_test1
-    terraform_version: v1.7.3
+    terraform_version: v1.9.7
     autoplan:
       when_modified:
         - "../_common/*.tf*"
