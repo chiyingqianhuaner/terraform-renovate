@@ -4,7 +4,6 @@
   "packageRules": [
     {
       "matchPaths": ["/sss/*"],
-      "matchPackageNames": ["hashicorp/terraform"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "groupName": "terraform-major-and-minor-ds-boston-dev"
