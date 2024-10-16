@@ -1,56 +1,35 @@
 version: 2
 automerge: true
 projects:
-  # Alphabetical order please
-  # Direcory: helm/<cloud-k8s-name>/<GCP_Project_Name>/<Cluster_Name>/<Team>
-  - name: database-operations_identity-pair-eu-prod-backend
-    dir: helm/gke/identity-pair-eu-prod-backend/eng-dbops-pair-eu-gke/database-operations
+  - name: database-operations_test
+    dir: helm/gke/my-dev/test
     workspace: default
-    workflow: pair_eu_prod
+    workflow: test
     terraform_version: v1.4.6
-  - name: database-operations_abilitec-staging-americas-db
-    dir: helm/gke/abilitec-staging-americas-db/singlestore-gke/database-operations
+  - name: devops_eng-ops-test
+    dir: helm/gke/eng-ops-test
     workspace: default
-    workflow: abilitec_singlestore
-    terraform_version: v1.4.6
-  - name: database-operations_eng-dbops-dw-eu
-    dir: helm/gke/eng-dbops-dw-eu/eng-dbops-dw-eu-gke/database-operations
-    workspace: default
-    workflow: dbops_dw_eu
-    terraform_version: v1.4.6
-  - name: devops_eng-ops-mttn-prod-uscentral1_mttn-dmz-prod-01
-    dir: helm/gke/eng-ops-mttn-prod-uscentral1/mttn-dmz-prod-01/devops
-    workspace: default
-    workflow: ops_mttn_prod_uscentral1
+    workflow: ops_mttn_test
     terraform_version: v1.7.3
     autoplan:
       when_modified:
         - "../_common/*.tf*"
-        - "../../../../_common/modules/grafana/mttn_k8s_alert_rule/*.tf*"
-        - "../../../../_common/modules/grafana/mttn_k8s_tenant_alert_rule/*.tf*"
-        - "../../../../_common/modules/mttn-dmz-prod-01-tenant-config/*.tf*"
         - "*.tf*"
-  - name: devops_eng-ops-mttn-prod-uscentral1_mttn-internal-prod-01
-    dir: helm/gke/eng-ops-mttn-prod-uscentral1/mttn-internal-prod-01/devops
+  - name: devops_eng-ops-test1
+    dir: helm/gke/my-prod
     workspace: default
-    workflow: ops_mttn_prod_uscentral1
+    workflow: ops_mttn_test1
     terraform_version: v1.7.3
     autoplan:
       when_modified:
         - "../_common/*.tf*"
-        - "../../../../_common/modules/grafana/mttn_k8s_alert_rule/*.tf*"
-        - "../../../../_common/modules/grafana/mttn_k8s_tenant_alert_rule/*.tf*"
-        - "../../../../_common/modules/mttn-internal-prod-01-tenant-config/*.tf*"
         - "*.tf*"
-  - name: devops_eng-ops-mttn-prod-euwest1_mttn-dmz-prod-euwest1-01
-    dir: helm/gke/eng-ops-mttn-prod-euwest1/mttn-dmz-prod-euwest1-01/devops
+  - name: devops_eng-ops-test2
+    dir: helm/gke/my-stg
     workspace: default
     workflow: mttn_prod_euwest1
     terraform_version: v1.7.3
     autoplan:
       when_modified:
         - "../_common/*.tf*"
-        - "../../../../_common/modules/grafana/mttn_k8s_alert_rule/*.tf*"
-        - "../../../../_common/modules/grafana/mttn_k8s_tenant_alert_rule/*.tf*"
-        - "../../../../_common/modules/mttn-dmz-eu-01-tenant-config/*.tf*"
         - "*.tf*"
