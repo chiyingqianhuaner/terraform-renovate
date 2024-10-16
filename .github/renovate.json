@@ -1,6 +1,7 @@
 {
   "extends": ["config:recommended", ":dependencyDashboard"],
   "schedule": ["before 4am on monday"],
+  "ignorePaths": ["**"],
   "packageRules": [
     {
       "matchPaths": ["helm/gke/ds-boston-dev/**"],
