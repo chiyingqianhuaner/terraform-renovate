@@ -2,8 +2,8 @@
   "extends": ["config:recommended", ":dependencyDashboard"],
   "schedule": ["before 0am on weekdays"],
   "includePaths": [
-    "helm/gke/my-dev/**",
-    "helm/gke/my-prod/**",
+    "helm/gke/business-dev/**",
+    "helm/gke/business-prod/**",
     "atlantis.yaml"
   ],
   "packageRules": [
@@ -12,16 +12,16 @@
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in my-dev",
-      "groupName": "terraform-major-and-minor-my-dev"
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev",
+      "groupName": "terraform-major-and-minor-business-dev"
     },
     {
       "matchPaths": ["helm/gke/my-prod/**"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in my-prod",
-      "groupName": "terraform-major-and-minor-my-prod"
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod",
+      "groupName": "terraform-major-and-minor-business-prod"
     }
   ],
   "regexManagers": [

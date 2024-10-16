@@ -2,7 +2,7 @@ version: 2
 automerge: true
 projects:
   - name: database-operations_test
-    dir: helm/gke/my-dev/test
+    dir: helm/gke/business-dev/test
     workspace: default
     workflow: test
     terraform_version: v1.4.6
@@ -16,7 +16,7 @@ projects:
         - "../_common/*.tf*"
         - "*.tf*"
   - name: devops_eng-ops-test1
-    dir: helm/gke/my-prod
+    dir: helm/gke/business-prod
     workspace: default
     workflow: ops_mttn_test1
     terraform_version: v1.7.3
@@ -25,7 +25,7 @@ projects:
         - "../_common/*.tf*"
         - "*.tf*"
   - name: devops_eng-ops-test2
-    dir: helm/gke/my-stg
+    dir: helm/gke/business-stg
     workspace: default
     workflow: mttn_prod_euwest1
     terraform_version: v1.7.3
