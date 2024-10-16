@@ -9,6 +9,7 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
+      "matchUpdateTypes": ["major","minor"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
@@ -17,6 +18,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
+      "matchUpdateTypes": ["major","minor"],
       "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
