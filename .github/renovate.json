@@ -9,15 +9,6 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["hashicorp/*"],
-      "separateMajorMinor": true,
-      "separateMultipleMajor": true,
-      "rangeStrategy": "bump",
-      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
-      "groupName": "business-dev-01"
-    },
-    {
-      "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["^terraform-google-modules/"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
