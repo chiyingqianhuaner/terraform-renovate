@@ -18,7 +18,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["grafana/*","terraform-google-modules/*"],
+      "matchPackageNames": ["grafana/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
@@ -30,7 +30,7 @@
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
-      "groupName": "business-prod-02"
+      "groupName": "business-prod-01"
     }
   ],
   "regexManagers": [
