@@ -19,8 +19,7 @@
     {
       "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["hashicorp/vault","hashicorp/helm","grafana/grafana","^terraform-google-modules/"],
-      "separateMajorMinor": true,
-      "separateMultipleMajor": true,
+      "matchUpdateTypes":["bump"],
       "rangeStrategy": "bump",
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-dev-02"
