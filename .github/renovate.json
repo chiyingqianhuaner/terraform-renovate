@@ -18,7 +18,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["hashicorp/vault","hashicorp/helm"],
+      "matchPackageNames": ["hashicorp/vault","hashicorp/helm","terraform-google-modules/vm/google//modules/instance_template"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
