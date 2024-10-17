@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["^terraform-google-modules/"],
+      "matchPackageNames": ["^terraform-"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
