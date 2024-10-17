@@ -9,6 +9,7 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
+      "matchPackageNames": ["hashicorp/*"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
