@@ -14,7 +14,7 @@
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev",
-      "groupName": "terraform-major-and-minor-business-dev"
+      "groupName": "terraform-major-and-minor-business-dev-01"
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
@@ -23,7 +23,7 @@
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev",
-      "groupName": "terraform-major-and-minor-business-dev"
+      "groupName": "terraform-major-and-minor-business-dev-02"
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
