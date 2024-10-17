@@ -9,6 +9,16 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
+      "matchPackageNames": ["hashicorp/google","hashicorp/google-beta"],
+      "separateMajorMinor": true,
+      "separateMultipleMajor": true,
+      "rangeStrategy": "bump",
+      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
+      "groupName": "business-dev-01"
+    },
+    {
+      "matchPaths": ["helm/gke/business-dev/**"],
+      "matchPackageNames": ["hashicorp/vault","hashicorp/helm"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
