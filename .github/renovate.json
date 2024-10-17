@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": ["bump"],
       "groupName": "terraform-major-and-minor-business-dev"
     },
     {
