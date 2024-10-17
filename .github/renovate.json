@@ -9,7 +9,9 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchUpdateTypes": ["bump"],
+      "separateMajorMinor": true,
+      "separateMultipleMajor": true,
+      "rangeStrategy": "bump",
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev",
       "groupName": "terraform-major-and-minor-business-dev"
     },
