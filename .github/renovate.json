@@ -29,7 +29,7 @@
       "matchPaths": ["helm/gke/business-prod/**"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod",
+      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-prod-02"
     }
   ],
