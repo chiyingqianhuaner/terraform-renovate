@@ -9,7 +9,7 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchUpdateTypes": ["minor"],
+      "matchUpdateTypes": ["major","minor"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev",
