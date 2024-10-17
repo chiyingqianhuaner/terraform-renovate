@@ -1,5 +1,5 @@
 {
-  "extends": ["config:recommended", ":dependencyDashboard"],
+  "extends": ["config:base", ":dependencyDashboard"],
   "schedule": ["before 1am"],
   "includePaths": [
     "helm/gke/business-dev/**",
