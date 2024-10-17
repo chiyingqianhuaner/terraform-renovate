@@ -18,7 +18,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["terraform-google-modules/vm"],
+      "matchPackageNames": ["^terraform-google-modules/"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
       "rangeStrategy": "bump",
