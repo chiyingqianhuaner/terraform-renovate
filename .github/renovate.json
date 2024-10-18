@@ -17,7 +17,7 @@
       "matchPaths": ["helm/gke/business-dev/**"],
       "matchUpdateTypes": ["patch", "minor"],
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
-      "groupName": "business-dev-02"
+      "groupName": "business-dev-02(non-major)"
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
