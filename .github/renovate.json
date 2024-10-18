@@ -12,7 +12,7 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "updateTypes": ["major"],
+      "matchUpdateTypes": ["major"],
       "enabled": false
     },
     {
