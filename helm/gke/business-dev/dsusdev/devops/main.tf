@@ -7,7 +7,7 @@ module "honeypot_template" {
 
 module "cloud-storage_template" {
   source  = "terraform-google-modules/cloud-storage/google"
-  version = "6.2.0"
+  version = "4.2.0"
 
   region     = "us-central1"
 }
