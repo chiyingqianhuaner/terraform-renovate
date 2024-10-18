@@ -11,3 +11,9 @@ module "cloud-storage_template" {
 
   region     = "us-central1"
 }
+
+module "project-factory" {
+  source  = "terraform-google-modules/project-factory/google"
+  version = "13.0.0"
+  # insert the 2 required variables here
+}
