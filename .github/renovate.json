@@ -9,12 +9,6 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchUpdateTypes": ["major"],
-      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
-      "groupName": "business-dev-01"
-    },
-    {
-      "matchPaths": ["helm/gke/business-dev/**"],
       "matchUpdateTypes": ["patch", "minor"],
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-dev-02(non-major)"
