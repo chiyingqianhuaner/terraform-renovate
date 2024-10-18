@@ -14,7 +14,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchDepTypes": ["module"],
+      "matchPackageNames": ["terraform-google-modules/*"],
       "rangeStrategy": "bump",
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-dev-01"
