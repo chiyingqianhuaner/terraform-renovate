@@ -9,16 +9,15 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "updateTypes": ["major"],
+      "updateTypes": ["major","patch"],
       "enabled": false,
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
-      "groupName": "business-dev-01"
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
       "rangeStrategy": "bump",
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
-      "groupName": "business-dev-02"
+      "groupName": "business-dev-01"
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
