@@ -1,6 +1,9 @@
 {
   "extends": ["config:base", ":dependencyDashboard"],
-  "schedule": ["before 1am"],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5,
+  "timezone": "Asia/Shanghai",
+  "schedule": ["at 2:45pm every day"],
   "includePaths": [
     "helm/gke/business-dev/**",
     "helm/gke/business-prod/**",
