@@ -15,7 +15,7 @@
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "rangeStrategy": "bump",
+      "matchUpdateTypes": ["patch", "minor"],
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-dev-02"
     },
