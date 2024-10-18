@@ -16,13 +16,13 @@
       "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["terraform-google-modules/*"],
       "rangeStrategy": "bump",
-      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}  in business-dev-01",
+      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}  in business-dev-01"
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
       "separateMajorMinor": true,
       "separateMultipleMajor": true,
-      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod-01",
+      "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod-01"
     }
   ],
   "regexManagers": [
