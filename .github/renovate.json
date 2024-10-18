@@ -3,7 +3,7 @@
   "prHourlyLimit": 2,
   "prConcurrentLimit": 5,
   "timezone": "Asia/Shanghai",
-  "schedule": ["at 2:45pm every day"],
+  "schedule": ["before 2:55pm"],
   "includePaths": [
     "helm/gke/business-dev/**",
     "helm/gke/business-prod/**",
