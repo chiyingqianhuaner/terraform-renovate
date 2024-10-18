@@ -1,6 +1,6 @@
 {
   "extends": ["config:base", ":dependencyDashboard"],
-  "prHourlyLimit": 200,
+  "prHourlyLimit": 2,
   "prConcurrentLimit": 6,
   "timezone": "Asia/Shanghai",
   "schedule": ["before 2:55pm"],
@@ -46,7 +46,8 @@
       "extractVersionTemplate": "v(?<version>.*)$",
       "depNameTemplate": "hashicorp/terraform",
       "datasourceTemplate": "github-releases",
-      "versioningTemplate": "semver"
+      "versioningTemplate": "semver",
+      "groupName": "atlantis-update"
     }
   ]
 }
