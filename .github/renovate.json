@@ -20,6 +20,12 @@
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
+      "matchPackageNames": ["hashicorp/*"],
+      "rangeStrategy": "bump",
+      "prTitle": "Update {{{depName}}} to {{{newValue}}} in business-dev-01(hashicorp)"
+    },
+    {
+      "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["terraform-google-modules/*"],
       "rangeStrategy": "bump",
       "prTitle": "Update {{{depName}}} to {{{newValue}}} in business-dev-01(module)"
