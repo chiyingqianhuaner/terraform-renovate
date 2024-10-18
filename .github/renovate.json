@@ -10,8 +10,7 @@
     {
       "matchPaths": ["helm/gke/business-dev/**"],
       "updateTypes": ["major","patch"],
-      "enabled": false,
-      "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
+      "enabled": false
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
