@@ -9,18 +9,13 @@
   "packageRules": [
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["hashicorp/google","hashicorp/google-beta"],
-      "separateMajorMinor": true,
-      "separateMultipleMajor": true,
-      "rangeStrategy": "bump",
+      "matchUpdateTypes": ["major"],
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-dev-01"
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
-      "matchPackageNames": ["hashicorp/vault","hashicorp/helm","grafana/grafana","^terraform-google-modules/"],
-      "matchUpdateTypes":["bump"],
-      "rangeStrategy": "bump",
+      "matchUpdateTypes": ["minor"],
       "prTitle": "{{{groupName}}} Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}}",
       "groupName": "business-dev-02"
     },
