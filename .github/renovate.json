@@ -13,7 +13,7 @@
     {
       "matchPaths": ["helm/gke/business-dev/**"],
       "matchUpdateTypes": ["major"],
-      "enabled": true
+      "enabled": false
     },
     {
       "matchPaths": ["helm/gke/business-dev/**"],
