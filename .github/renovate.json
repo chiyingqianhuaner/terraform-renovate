@@ -36,7 +36,8 @@
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
-      "rangeStrategy": "bump",
+      "separateMajorMinor": true,
+      "separateMultipleMajor": true,
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod-01",
       "groupName": "business-prod-01"
     }
