@@ -1,7 +1,7 @@
 {
   "extends": ["config:base", ":dependencyDashboard"],
   "prHourlyLimit": 2,
-  "prConcurrentLimit": 6,
+  "prConcurrentLimit": 8,
   "timezone": "Asia/Shanghai",
   "schedule": ["before 2:55pm"],
   "includePaths": [
