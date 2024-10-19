@@ -31,11 +31,6 @@
     },
     {
       "matchPaths": ["helm/gke/business-prod/**"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    },
-    {
-      "matchPaths": ["helm/gke/business-prod/**"],
       "rangeStrategy": "bump",
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-prod-01",
       "groupName": "business-prod-01"
