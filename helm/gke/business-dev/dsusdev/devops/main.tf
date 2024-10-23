@@ -7,13 +7,13 @@ module "honeypot_template" {
 
 module "cloud-storage_template" {
   source  = "terraform-google-modules/cloud-storage/google"
-  version = "4.0.1"
+  version = "4.0.0"
 
   region     = "us-central1"
 }
 
 module "project-factory" {
   source  = "terraform-google-modules/project-factory/google"
-  version = "13.1.0"
+  version = "13.0.0"
   # insert the 2 required variables here
 }
