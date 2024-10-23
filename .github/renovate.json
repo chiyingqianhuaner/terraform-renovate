@@ -19,7 +19,7 @@
       "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["terraform-google-modules/*"],
       "rangeStrategy": "bump",
-      "groupName": "business-dev-01(module)",
+      "groupName": "all-terraform-modules",
       "groupSlug": "all-terraform-modules"
     },
     {
