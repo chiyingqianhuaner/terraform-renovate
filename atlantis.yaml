@@ -5,12 +5,12 @@ projects:
     dir: helm/gke/business-dev/test
     workspace: default
     workflow: test
-    terraform_version: v1.4.6
+    terraform_version: v1.9.8
   - name: devops_eng-ops-test
     dir: helm/gke/eng-ops-test
     workspace: default
     workflow: ops_mttn_test
-    terraform_version: v1.7.3
+    terraform_version: v1.9.8
     autoplan:
       when_modified:
         - "../_common/*.tf*"
@@ -19,7 +19,7 @@ projects:
     dir: helm/gke/business-prod
     workspace: default
     workflow: ops_mttn_test1
-    terraform_version: v1.9.7
+    terraform_version: v1.9.8
     autoplan:
       when_modified:
         - "../_common/*.tf*"
@@ -28,7 +28,7 @@ projects:
     dir: helm/gke/business-stg
     workspace: default
     workflow: mttn_prod_euwest1
-    terraform_version: v1.7.3
+    terraform_version: v1.9.8
     autoplan:
       when_modified:
         - "../_common/*.tf*"
