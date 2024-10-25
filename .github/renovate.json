@@ -26,6 +26,7 @@
       "matchPaths": ["helm/gke/business-dev/**"],
       "matchPackageNames": ["hashicorp/*","grafana/*"],
       "rangeStrategy": "bump",
+      "automerge": true,
       "prTitle": "Update {{{depName}}} from {{{currentValue}}} to {{{newValue}}} in business-dev-01(hashicorp)",
       "groupName": "business-dev-01(hashicorp)"
     },
