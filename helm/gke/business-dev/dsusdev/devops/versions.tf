@@ -1,15 +1,15 @@
 terraform {
-  required_version = "~> 1.0.0"
+  required_version = "~> 1.9.8"
 
   required_providers {
-    google      = "~> 3.0"
-    google-beta = "~> 3.0"
-    vault       = "~> 2.0"
-    helm        = "~> 1.0"
-    kubernetes  = "~> 2.0"
+    google      = "~> 3.90"
+    google-beta = "~> 3.90"
+    vault       = "~> 2.24"
+    helm        = "~> 1.3"
+    kubernetes  = "~> 2.34"
     grafana = {
       source  = "grafana/grafana"
-      version = "~> 2.0"
+      version = "~> 2.19"
     }
   }
 }
